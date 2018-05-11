@@ -7,12 +7,14 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.set('view engine','ejs');
+var todoList =["wash the car and change oil",
+              "buy groceries and make dinner"]
 
 var routes = require('./routes')(app);
 //===========Express Routes Here=======//
 app.get("/",function(req,res){
-  res.send("<h1>Hello World</h1>");
-})
+  res.render("index.ejs")
+});
 //catch all other routes
 app.get("*",function(req,res){
   res.send("<h1>Invalid Pages</h1>")
