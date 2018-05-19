@@ -1,7 +1,7 @@
 {
-
   "development": {
     "username": "root",
+    "password": "",
     "database": "st2de",
     "host": "127.0.0.1",
     "dialect": "mysql"
@@ -13,7 +13,6 @@
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
-
   "production": {
     "username": "root",
     "password": "root",
@@ -22,4 +21,3 @@
     "dialect": "mysql"
   }
 }
-
